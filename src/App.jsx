@@ -12,7 +12,7 @@ function App() {
         <p>Clase DWFS</p>
       </article>
       <section>
-        <p>23 de abril</p>
+        <p>23 de abril Modificado</p>
       </section>
       <footer>
         <p>2005</p>
