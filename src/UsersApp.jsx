@@ -1,34 +1,19 @@
 import React, {useEffect, useState} from 'react'
+import { UserList } from './components/userList'
+
 
 export const UsersApp = () => {
 
-  const [users, setUsers] = useState([])
-
-  const fetchUsers = async() => {
-    try {
-      const response = await fetch('https://jsonplaceholder.typicode.com/users')
-      const data = await response.json()
-      console.log(data)
-      setUsers(data)
-    } catch (error) {
-      console.error(error)
-    }
-  }
-
-  // useEffect(() => {
-  //   fetchUsers()
-  // }, [])
+  const [endPoint, setEndPoint] = useState('users')
 
   const hendleFetc = () => {
-    fetchUsers()
+    setEndPoint('comments')
   }
 
   return (
     <>
       <h1>Lista de Usuraios:</h1>
-      <ul>
-        {users.map(user => <li key={user.id}>Nombre: {user.name} Email: {user.email}</li>)}
-      </ul>
+      <UserList endPoint={endPoint}></UserList>
       <button onClick={hendleFetc}>Cargar Api</button>
     </>
   )
