@@ -12,7 +12,7 @@ export const UsersApp = () => {
 
   return (
     <>
-      <h1>Lista de Usuraios probando:</h1>
+      <h1>Lista de Usuraios :</h1>
       <UserList endPoint={endPoint}></UserList>
       <button onClick={hendleFetc}>Cargar Api</button>
     </>
