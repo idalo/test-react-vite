@@ -1,7 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './styles/style.css'
-import { UsersApp } from './usersApp'
+import { UsersApp } from './UsersApp'
+
 
 
 
