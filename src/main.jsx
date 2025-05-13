@@ -9,6 +9,6 @@ import { UsersApp } from './UsersApp'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <UsersApp />
+    <UsersApp></UsersApp>
   </StrictMode>,
 )
